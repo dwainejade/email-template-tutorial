@@ -17,7 +17,6 @@
 
         body {
             font-family: "Raleway", sans-serif;
-            background-color: rgb(217, 229, 244);
             font-size: 19px;
             max-width: 800px;
             margin: auto;
@@ -25,65 +24,76 @@
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
         }
 
         header {
             width: 98%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin: auto;
         }
 
         #logo {
-            max-width: 120px;
-            margin: 3% 0 3% 3%;
-            display: flex;
+            float: left;
+            display: inline;
         }
-        .logo-png{
-            width: 35px;
-            margin: 2px;
+
+        .brand {
+            font-size: 2rem;
+            font-weight: 400;
         }
-        #social{
+
+        .logo-png {
+            width: 32px;
+        }
+
+        #social {
             list-style-type: none;
             margin: 2%;
-            display: flex;
+            float: right;
         }
-        #wrapper{
-            background-color: azure;
+
+        #social>li {
+            display: inline;
         }
-        .btn{
+
+        #wrapper {
+            background-color: white;
+            width: 100%;
+        }
+
+        .btn {
             float: right;
             margin: 2% 4%;
-            background-color:brown;
+            background-color: tomato;
             color: white;
-            padding: 1% ;
+            padding: 1%;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
         }
-        .one-column{
+
+        .one-column {
             width: 96%;
             margin: auto;
         }
 
         h1{
-            padding: 2% 0;
             text-align: center;
         }
 
-        p{
+        p {
             padding: 1% 0;
         }
 
-        hr{
+        hr {
             height: 1px;
             background-color: black;
             clear: both;
             width: 96%;
             margin: auto;
         }
-        footer{
+
+        footer {
             width: 100%;
             text-align: center;
             padding-bottom: 2%;
@@ -93,38 +103,42 @@
 
 <body>
     <div id="wrapper">
-        <header>
+        <header class="head">
             <div id="logo">
-                <img class="logo-png" src="./images/logo.webp" alt="">
-                <h1>Shopr</h1>
+                <img class="logo-png" src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/logo.webp" alt="shopr" align="left">
+                <span class="brand">Shopr</span>
             </div>
-            <div>
+            <div class="social-wrapper">
                 <ul id="social">
                     <li>
                         <a href="#" target="_blank">
-                            <img class="logo-png" src="images/fb-color.png" alt="">
+                            <img class="logo-png"
+                                src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/fb-color.png" alt="facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <img class="logo-png" src="images/ig-color.png" alt="">
+                            <img class="logo-png"
+                                src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/ig-color.png" alt="instagram">
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <img class="logo-png" src="images/tw-color.png" alt="">
+                            <img class="logo-png"
+                                src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/tw-color.png" alt="twitter">
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <img class="logo-png" src="images/yt-color.png" alt="">
+                            <img class="logo-png"
+                                src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/yt-color.png" alt="youtube">
                         </a>
                     </li>
                 </ul>
             </div>
         </header>
         <div id="banner">
-            <img src="images/banner.webp" alt="">
+            <img src="https://dwainegnd-email-template-tutorial.mdbgo.io/images/banner.webp" alt="sale banner">
         </div>
         <div class="one-column">
             <h1>The Biggest Sale of the Year!</h1>
@@ -145,7 +159,7 @@
                     MDBoostrap <br />
                     123 Fake Street <br />
                     Springfield, NY <br />
-                    dwainem.gnd@gmail.com
+                    dwaine.gnd@gmail.com
                 </p>
             </footer>
         </div>
